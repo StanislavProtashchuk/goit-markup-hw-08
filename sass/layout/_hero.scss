@@ -1,8 +1,8 @@
 .hero {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 480px;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -12,21 +12,50 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  // margin: 0 auto;
+  // max-width: 1600px;
+  // text-align: center;
+  // padding: 200px 0;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url(../images/hero.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
   @include font-style(
     $weight: 900,
-    $size: 44px,
-    $height: 60px,
+    $size: 26px,
+    $height: 42px,
     $spacing: 0.06em
   );
 
   color: $white;
   text-transform: uppercase;
+
+  // max-width: 696px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 30px;
+
+  // @include font-style(
+  //   $weight: 900,
+  //   $size: 44px,
+  //   $height: 60px,
+  //   $spacing: 0.06em
+  // );
+
+  // color: $white;
+  // text-transform: uppercase;
 }

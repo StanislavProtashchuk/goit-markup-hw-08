@@ -1,6 +1,6 @@
 .button {
-  width: 200px;
-  height: 50px;
+  width: 136px;
+  height: 30px;
   border: 0px;
   border-radius: 4px;
 
@@ -18,4 +18,24 @@
     background-color: #188ce8;
     color: $white;
   }
+
+  // width: 200px;
+  // height: 50px;
+  // border: 0px;
+  // border-radius: 4px;
+
+  // background-color: $accent;
+
+  // @include font-style($weight: 700, $height: 30px, $spacing: 0.06em);
+
+  // cursor: pointer;
+  // color: $white;
+
+  // transition: background-color $animation;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: #188ce8;
+  //   color: $white;
+  // }
 }
