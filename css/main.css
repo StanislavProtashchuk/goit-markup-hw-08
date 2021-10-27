@@ -50,7 +50,7 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%;
   margin: 0px auto;
   padding: 0px 15px;
 }
@@ -60,7 +60,7 @@ a {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16667;
@@ -278,7 +278,7 @@ a {
 
 .hero {
   margin: 0 auto;
-  max-width: 480px;
+  width: 100%;
   text-align: center;
   padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -301,12 +301,10 @@ a {
 }
 
 .fitures__item {
-  width: 450px;
   margin-bottom: 30px;
 }
 
 .fitures__wrapper {
-  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -369,24 +367,23 @@ a {
   background-color: #f5f4fa;
 }
 
-.team {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .team__item {
-  margin-right: 30px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
-.team__item:nth-child(4n) {
-  margin-right: 0;
+.team__item:last-child {
+  margin-bottom: 0;
 }
 
 .team__wrapper {
   padding: 30px 0;
+}
+
+.team__image {
+  width: 450px;
 }
 
 .team__name {
