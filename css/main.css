@@ -407,26 +407,26 @@ a {
 }
 
 .clients {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.clients__item + .clients__item {
-  margin-left: 30px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
