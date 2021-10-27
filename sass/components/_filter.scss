@@ -1,0 +1,39 @@
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter__button {
+  min-width: 73px;
+  border: 0px;
+  border: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  background-color: $background;
+
+  @include font-style($weight: 500, $height: 26px);
+
+  text-align: center;
+
+  color: $black;
+  cursor: pointer;
+
+  transition: color $animation, background-color $animation, filter $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.filter__item {
+  margin-right: 8px;
+
+  &__item:nth-child(5n) {
+    margin-right: 0px;
+  }
+}

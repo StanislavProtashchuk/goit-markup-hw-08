@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  @include font-style($weight: 500, $size: 14px, $spacing: 0.02em);
+
+  color: $grey;
+
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.contact__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  .contact:hover .contact__icon,
+  .contact:focus .contact__icon {
+    color: $accent;
+    fill: $accent;
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  @include font-style($weight: 700, $size: 36px, $height: 42px);
+
+  text-align: center;
+}

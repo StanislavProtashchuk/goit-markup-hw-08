@@ -1,0 +1,12 @@
+body {
+  font-family: "roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a {
+  outline-color: #2196f3;
+}
+
+.flex {
+  @include flex;
+}

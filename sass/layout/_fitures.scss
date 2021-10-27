@@ -1,0 +1,38 @@
+.fitures {
+  display: flex;
+}
+
+.fitures__item {
+  width: 270px;
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.fitures__wrapper {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $background;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fitures__title {
+  margin-bottom: 10px;
+
+  @include font-style($weight: 700, $size: 14px);
+
+  text-transform: uppercase;
+  color: $black;
+}
+
+.fitures__description {
+  @include font-style($size: 14px, $height: 24px);
+
+  color: $grey;
+}
