@@ -320,7 +320,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .fitures {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -437,7 +436,6 @@ a {
 }
 
 .clients {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
