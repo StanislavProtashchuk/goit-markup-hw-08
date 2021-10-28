@@ -1,6 +1,10 @@
 .navigation {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navigation__item {
