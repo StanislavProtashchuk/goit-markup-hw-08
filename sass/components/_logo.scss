@@ -8,7 +8,7 @@
 
   font-family: Raleway;
 
-  @include font-style($weight: 700, $size: 26px, $height: 31px);
+  @include font-style($weight: 700, $size: 24px, $height: 28px);
 
   color: $accent;
 }

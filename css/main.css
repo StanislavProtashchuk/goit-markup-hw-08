@@ -141,8 +141,8 @@ a {
   padding: 16px 0 16px 15px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19231;
+  font-size: 24px;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -986,5 +986,11 @@ input::placeholder {
 
 .button-menu:focus, .button-menu:hover {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
