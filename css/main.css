@@ -55,6 +55,12 @@ a {
   padding: 0px 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .section {
   padding: 60px 0;
 }

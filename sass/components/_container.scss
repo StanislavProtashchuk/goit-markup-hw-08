@@ -2,6 +2,9 @@
   width: 100%;
   margin: 0px auto;
   padding: 0px 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   // width: 1200px;
 }
