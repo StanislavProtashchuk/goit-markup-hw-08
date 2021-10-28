@@ -69,8 +69,8 @@ a {
 }
 
 .button {
-  width: 136px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
   border: 0px;
   border-radius: 4px;
   background-color: #2196f3;
@@ -415,9 +415,6 @@ a {
 }
 
 .clients__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 }
@@ -426,7 +423,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
