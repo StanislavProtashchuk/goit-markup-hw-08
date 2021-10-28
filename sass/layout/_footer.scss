@@ -4,18 +4,20 @@
 }
 
 .footer__container {
-  display: flex;
+  // display: flex;
   // justify-content: center;
-  flex-direction: column;
+  // flex-direction: column;
   // align-items: baseline;
   align-items: center;
 }
 
 .adress__wrapper {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   text-align: center;
   width: 231px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
   // margin-right: 70px;
 }

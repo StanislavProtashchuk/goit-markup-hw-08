@@ -9,6 +9,7 @@ li {
 }
 
 a {
+  display: block;
   text-decoration: none;
   font-style: normal;
 }
@@ -131,7 +132,7 @@ a {
 
 .logo {
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -453,16 +454,14 @@ a {
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .adress__wrapper {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   width: 231px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
 }
 
