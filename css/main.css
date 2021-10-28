@@ -61,6 +61,18 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding: 60px 0;
 }
@@ -354,9 +366,14 @@ a {
   font-size: 14px;
   line-height: 1.14286;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .fitures__title {
+    text-align: center;
+  }
 }
 
 .fitures__description {
@@ -403,15 +420,25 @@ a {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .team__item {
+  margin: 15px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
 }
 
-.team__item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 .team__wrapper {
@@ -451,6 +478,12 @@ a {
 .clients__item {
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .clients__link {
