@@ -39,7 +39,6 @@ a {
 
 .flex {
   display: flex;
-  align-items: center;
 }
 
 .visually-hidden {
@@ -91,7 +90,10 @@ a {
 
 .contact {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 @media screen and (max-width: 767px) {
@@ -102,8 +104,6 @@ a {
 
 .contact__link {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -121,30 +121,38 @@ a {
   display: inline-block;
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 50px;
+.contact__item:not(last-cild) {
+  margin-bottom: 10px;
 }
 
-.contact__item .contact__icon {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.contact__item .contact:hover .contact__icon,
-.contact__item .contact:focus .contact__icon {
+.contact:hover .contact__icon,
+.contact:focus .contact__icon {
   color: #2196f3;
   fill: #2196f3;
 }
 
 .logo {
   text-align: center;
-  padding: 16px 0 16px 15px;
+  padding: 16px 0;
   font-family: Raleway;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16667;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .logo--header {
@@ -168,8 +176,6 @@ a {
 
 .navigation__item {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .navigation__item:not(:last-child) {

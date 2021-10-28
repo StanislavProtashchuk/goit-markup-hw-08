@@ -8,5 +8,6 @@ a {
 }
 
 .flex {
-  @include flex;
+  display: flex;
+  // @include flex;
 }
