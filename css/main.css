@@ -318,8 +318,20 @@ a {
   text-transform: uppercase;
 }
 
-.fitures__item {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .fitures {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fitures__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 .fitures__wrapper {
