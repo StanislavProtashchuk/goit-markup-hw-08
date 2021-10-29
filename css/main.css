@@ -1132,6 +1132,22 @@ input::placeholder {
   transform: translateY(-100%);
 }
 
+.button-menu--mobile {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.button-menu--mobile:focus, .button-menu--mobile:hover {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu--mobile {
+    display: none;
+  }
+}
+
 .mobile-menu__wrapper {
   position: fixed;
   top: 0;

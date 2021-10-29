@@ -2,6 +2,21 @@
   //   margin-top: 48px;
 }
 
+.button-menu--mobile {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    fill: $accent;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .mobile-menu__wrapper {
   position: fixed;
   top: 0;
