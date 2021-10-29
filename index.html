@@ -17,15 +17,14 @@
 <body>
   <!------------------------------------------------------------Шапка сайта-------------------------------------------------------------------->
   <header class="header">
-
-    <div class="container header__container">
-    <nav class="flex" >
-      <a class="logo" href="./index.html"> Web<span class="logo--header">Studio</span></a>
+    <div class="container header__container">    
+      <a class="logo logo--top" href="./index.html"> Web<span class="logo--header">Studio</span></a>
           <button type="button" class="button-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="40" height="40">
               <use href="./images/sprite.svg#icon-menu_mobile"></use>
             </svg>
           </button>
+    <nav class="flex">
       <ul class="navigation">
         <li class="navigation__item" ><a class="navigation__link current" href="./index.html">Студия</a></li>
         <li class="navigation__item" ><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
@@ -330,6 +329,7 @@
   <!--------------------------------------------------------------Подвал сайта-------------------------------------------------------------------->
 <footer class="footer">
   <div class="container footer__container">
+    <div class="info-wrapper">
     <div class="adress__wrapper">
       <a class="logo" href="./index.html"> Web<span class="logo--footer">Studio</span></a>
       <address>
@@ -373,6 +373,7 @@
           </a> </li>
 
       </ul>
+    </div>
     </div>
     <form action="">
       <label for="user-email" class="footer-label">Подпишитесь на рассылку</label>
@@ -455,8 +456,8 @@
     </svg>
   </button>
   <ul class="mobile-menu">
-    <li class="mobile-menu__item"> <a class="mobile-menu__link" href="">Студия</a></li>
-    <li class="mobile-menu__item"> <a class="mobile-menu__link" href="">Портфолио</a></li>
+    <li class="mobile-menu__item"> <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студия</a></li>
+    <li class="mobile-menu__item"> <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
     <li class="mobile-menu__item"> <a class="mobile-menu__link" href="">Контакты</a></li>
   </ul>
   <ul class="mobile-contacts">
