@@ -77,6 +77,12 @@ a {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 .section__title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -360,6 +366,12 @@ a {
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
 .hero__title {
   max-width: 360px;
   margin-left: auto;
@@ -508,6 +520,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
+
 .team__wrapper {
   padding: 30px 0;
 }
@@ -550,6 +568,12 @@ a {
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
   }
 }
 
