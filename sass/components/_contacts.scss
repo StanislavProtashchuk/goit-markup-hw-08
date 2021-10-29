@@ -32,8 +32,8 @@
   margin-right: 10px;
 }
 
-.contact:hover .contact__icon,
-.contact:focus .contact__icon {
+.contact__item:hover .contact__icon,
+.contact__item:focus .contact__icon {
   color: $accent;
   fill: $accent;
 }
