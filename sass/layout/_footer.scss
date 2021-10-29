@@ -7,16 +7,29 @@
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 0 89px 0 76px;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
   }
 
-  justify-content: center;
-  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .info-wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 93px;
   }
 }
 
@@ -27,6 +40,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    text-align: start;
+    margin-bottom: 0;
   }
   // margin-right: 70px;
 }
@@ -72,10 +91,9 @@
   flex-direction: column;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
-  // margin-right: 93px;
 }
 
 .social__title {
@@ -93,6 +111,10 @@
   @include font-style($weight: 700, $size: 14px);
 
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .social__link--footer {
@@ -131,6 +153,10 @@
   text-transform: uppercase;
 
   color: $white;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-label__wrapper {
@@ -138,6 +164,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-label__input {
@@ -165,6 +197,10 @@
   border-radius: 4px;
   outline: none;
   transition: border $animation;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 input::placeholder {
@@ -187,7 +223,9 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 
-  // margin-left: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer-label__button--icon {

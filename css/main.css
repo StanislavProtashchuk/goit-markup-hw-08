@@ -208,6 +208,12 @@ a {
   margin-bottom: 26px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo--bottom {
+    text-align: start;
+  }
+}
+
 .logo--header {
   color: #212121;
 }
@@ -607,15 +613,24 @@ a {
   padding: 60px 0;
 }
 
-.footer__container {
-  justify-content: center;
-  flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
     padding: 0 89px 0 76px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer__container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-direction: row;
   }
 }
 
@@ -623,6 +638,14 @@ a {
   .info-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 93px;
   }
 }
 
@@ -635,6 +658,14 @@ a {
   .adress__wrapper {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress__wrapper {
+    width: 231px;
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -679,9 +710,9 @@ a {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .social__wrapper {
-    margin-left: auto;
+    margin-left: 70px;
   }
 }
 
@@ -696,6 +727,12 @@ a {
   line-height: 1.14286;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__title {
+    justify-content: start;
+  }
 }
 
 .social__link--footer {
@@ -732,11 +769,25 @@ a {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    text-align: start;
+  }
+}
+
 .footer-label__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-label__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-label__input {
@@ -765,6 +816,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-label__input {
+    width: 358px;
+  }
+}
+
 input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -785,6 +842,12 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-label__button {
+    margin-left: 12px;
+  }
 }
 
 .footer-label__button--icon {
