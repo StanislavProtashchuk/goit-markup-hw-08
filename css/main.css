@@ -416,7 +416,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .fitures__item .fitures__item {
+  .fitures__item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
