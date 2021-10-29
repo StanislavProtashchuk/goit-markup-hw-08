@@ -44,7 +44,16 @@
   color: $white;
   text-transform: uppercase;
 
-  // max-width: 696px;
+  @media screen and (min-width: 1600px) {
+    @include font-style(
+      $weight: 900,
+      $size: 44px,
+      $height: 60px,
+      $spacing: 0.06em
+    );
+    max-width: 696px;
+  }
+
   // margin-left: auto;
   // margin-right: auto;
   // margin-bottom: 30px;
