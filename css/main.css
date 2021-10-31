@@ -329,6 +329,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 .filter__button {
   min-width: 73px;
   border: 0px;
@@ -1105,6 +1112,13 @@ input::placeholder {
   .portfolio__item {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
