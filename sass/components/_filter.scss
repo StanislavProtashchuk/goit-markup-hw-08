@@ -44,7 +44,35 @@
   margin-right: 8px;
   margin-bottom: 15px;
 
-  &__item:nth-child(5n) {
-    margin-right: 0px;
+  @media screen and (max-width: 479px) {
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    &:nth-child(3n) {
+      margin-right: 8px;
+    }
   }
 }

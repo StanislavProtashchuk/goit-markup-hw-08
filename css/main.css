@@ -38,7 +38,14 @@ a {
 }
 
 .flex {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 
 .visually-hidden {
@@ -53,6 +60,12 @@ a {
   width: 100%;
   margin: 0px auto;
   padding: 0px 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -120,31 +133,26 @@ a {
 
 @media screen and (min-width: 768px) {
   .contact {
-    display: flex;
-    flex-direction: column;
     margin-left: auto;
-    margin-top: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
-    flex-direction: row;
-    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.contact__item {
-  display: inline-block;
-}
-
-.contact__item:not(last-cild) {
+.contact__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__item {
-    margin-left: 30px;
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -185,7 +193,6 @@ a {
 
 .logo {
   text-align: center;
-  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 24px;
@@ -201,11 +208,6 @@ a {
     line-height: 1.19231;
     letter-spacing: 0.03em;
   }
-}
-
-.logo--top {
-  margin-top: 26px;
-  margin-bottom: 26px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -231,7 +233,6 @@ a {
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
-    margin-left: 88px;
   }
 }
 
@@ -364,8 +365,35 @@ a {
   margin-bottom: 15px;
 }
 
-.filter__item__item:nth-child(5n) {
-  margin-right: 0px;
+@media screen and (max-width: 479px) {
+  .filter__item:nth-child(even) {
+    margin-right: 0;
+  }
+  .filter__item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .filter__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .filter__item:nth-child(5n) {
+    margin-right: 0;
+  }
+  .filter__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
+  .filter__item:nth-child(3n) {
+    margin-right: 8px;
+  }
 }
 
 .header {
@@ -374,6 +402,9 @@ a {
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
 }
 
 .hero {
@@ -449,6 +480,14 @@ a {
   }
 }
 
+.fitures__item {
+  margin-bottom: 30px;
+}
+
+.fitures__item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .fitures__item {
     width: calc((100% - 4 * 15px) / 2);
@@ -459,12 +498,6 @@ a {
 @media screen and (min-width: 1200px) {
   .fitures__item {
     width: 270px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .fitures__item:last-child {
-    margin-right: 0;
   }
 }
 
@@ -559,10 +592,17 @@ a {
   margin-bottom: 30px;
 }
 
+.team__item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .team__item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+  }
+  .team__item:last-child {
+    margin-bottom: 15px;
   }
 }
 
@@ -674,10 +714,15 @@ a {
   }
 }
 
+.info-wrapper {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .info-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -686,7 +731,12 @@ a {
     display: flex;
     justify-content: flex-start;
     margin-right: 93px;
+    margin-bottom: 0;
   }
+}
+
+.adress {
+  margin-top: 20px;
 }
 
 .adress__wrapper {
@@ -698,6 +748,7 @@ a {
   .adress__wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
@@ -747,7 +798,6 @@ a {
 .social__wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1104,19 +1154,19 @@ input::placeholder {
   }
 }
 
-.portfolio__item {
+.portfolio__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio__item {
+  .portfolio__item:not(:last-child) {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__item {
+  .portfolio__item:not(:last-child) {
     margin: 15px;
     width: calc((100% - 6 * 15px) / 3);
   }
@@ -1176,7 +1226,6 @@ input::placeholder {
 }
 
 .button-menu--mobile {
-  margin-left: auto;
   border: none;
   background-color: transparent;
 }

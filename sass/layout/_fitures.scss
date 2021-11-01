@@ -7,6 +7,12 @@
 }
 
 .fitures__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
@@ -16,12 +22,6 @@
 .fitures__item {
   @media screen and (min-width: 1200px) {
     width: 270px;
-  }
-}
-
-.fitures__item:last-child {
-  @media screen and (min-width: 1200px) {
-    margin-right: 0;
   }
 }
 

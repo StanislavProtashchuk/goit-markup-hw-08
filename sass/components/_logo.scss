@@ -1,6 +1,5 @@
 .logo {
   text-align: center;
-  margin-bottom: 20px;
   // padding: 16px 0;
   // margin-right: 93px;
   // padding-top: 24px;
@@ -16,11 +15,6 @@
   @media screen and (min-width: 1200px) {
     @include font-style($weight: 700, $size: 26px, $height: 31px);
   }
-}
-
-.logo--top {
-  margin-top: 26px;
-  margin-bottom: 26px;
 }
 
 .logo--bottom {
