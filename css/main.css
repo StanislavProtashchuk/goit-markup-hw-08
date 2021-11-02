@@ -963,6 +963,20 @@ input::placeholder {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+    margin-top: 0;
+  }
+}
+
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -971,6 +985,15 @@ input::placeholder {
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__close-btn {
@@ -1086,6 +1109,15 @@ input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__comment:placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.01em;
+  }
+}
+
 .modal__button {
   display: block;
   margin: auto;
@@ -1106,6 +1138,15 @@ input::placeholder {
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-checkbox__link {
