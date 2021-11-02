@@ -26,14 +26,9 @@
   max-width: 450px;
   max-height: 609px;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 40px;
-  }
-
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     max-height: 581px;
-    margin-top: 0;
   }
 
   // left: 536px;
