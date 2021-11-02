@@ -1181,6 +1181,7 @@ input::placeholder {
 }
 
 .portfolio__item {
+  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 
@@ -1208,7 +1209,6 @@ input::placeholder {
 .portfolio__link {
   position: relative;
   height: 100%;
-  border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
