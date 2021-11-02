@@ -62,12 +62,6 @@ a {
   padding: 0px 15px;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -363,16 +357,6 @@ a {
 .filter__item {
   margin-right: 8px;
   margin-bottom: 15px;
-}
-
-@media screen and (max-width: 479px) {
-  .filter__item:nth-child(even) {
-    margin-right: 0;
-  }
-  .filter__item:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 480px) {

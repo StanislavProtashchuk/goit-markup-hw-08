@@ -44,17 +44,6 @@
   margin-right: 8px;
   margin-bottom: 15px;
 
-  @media screen and (max-width: 479px) {
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-      margin-bottom: 0;
-    }
-  }
-
   @media screen and (min-width: 480px) {
     &:nth-child(3n) {
       margin-right: 0;
