@@ -964,8 +964,15 @@ input::placeholder {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    margin-top: 208px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
+    margin-top: 0;
     max-width: 528px;
     max-height: 581px;
   }
