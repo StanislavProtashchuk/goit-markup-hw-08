@@ -1180,19 +1180,26 @@ input::placeholder {
   }
 }
 
-.portfolio__item:not(:last-child) {
+.portfolio__item {
   margin-bottom: 30px;
 }
 
+.portfolio__item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
-  .portfolio__item:not(:last-child) {
+  .portfolio__item {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
+  }
+  .portfolio__item:last-child {
+    margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__item:not(:last-child) {
+  .portfolio__item {
     margin: 15px;
     width: calc((100% - 6 * 15px) / 3);
   }
@@ -1200,6 +1207,7 @@ input::placeholder {
 
 .portfolio__link {
   position: relative;
+  height: 100%;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
